@@ -71,3 +71,44 @@ ul li ul:hover {
     display: flex;
     flex-direction: column;
 }
+.displaycar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.displaycar--blue{
+    color: white;
+    background-color: rgb(10, 44, 71);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.displaycar__text{
+    text-align: center;
+}
+
+.displaycar__friendly{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+}
+
+.galardon--expand{
+    padding: 5%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 40%;
+}
+
+.galardon--expand__section{
+    display: flex;
+    flex-direction: column;
+}

@@ -100,15 +100,16 @@ ul li ul:hover {
     background-color: white;
 }
 
-.galardon--expand{
-    padding: 5%;
+.textcontainer{
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 40%;
+
+
 }
 
-.galardon--expand__section{
+.textcontainer__section{
     display: flex;
     flex-direction: column;
 }
+

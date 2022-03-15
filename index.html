@@ -10,7 +10,7 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://www.docker.com/"><img src="assets/index/Logo.png" height="40px" alt="Logo Docker"/></a></li>
+                    <li><a href="https://www.docker.com/"><img src="assets/index/Logo.png" height="35px" alt="Logo Docker"/></a></li>
                     <li><a href="index.html">Products</a></li>
                     <li><a href="info.html">Developers</a>
                         <ul>
@@ -25,11 +25,18 @@
                     <li><a href="dining.html">Blog</a></li>
                     <li><a href="contact.html">About Us</a></li>
                     <li><a href="contact.html">Partners</a></li>
+                    <div>
+                        <form >
+                            <input type="text" name="login" id="login">
+                            <button>Get Started</button>
+                        </form>
+                    </div>
                 </ul>
             </nav>
         </header>
         
         <main>
+            
             <article class="desdocker">
                 <h1 class="desdocker__title"> Developers Love Docker. 
                      Bussiness Trust It,
@@ -37,77 +44,85 @@
                 <p class="desdocker__text"> Buil safer, share wider, run faster: New updates to out products subscriptions. </p>
                 <button class="desdocker__btn">Learn More</button>
             </article>
-
-            <article class = "galardon">
-                <div class = "galardon__img"><img src="assets/index/img1.png" alt="Img docker"></div>
-                <section class = "galardon__section">
-                    <span class = "galardon__titlewhats" >WHAT'S NEW</span>
-                    <h2 class = "galardon__title">Key Trends to Watch in 2022</h2>
-                    <p class = "galardon__desc">What are the six major trends impacting development teams and ultimately the way organizations operate and consume applications today? Read this report to learn how development teams can minimize disruption by modernizing the way they build, share, and run their applications with Docker.</p>
-                    <strong class = "galardon__titleread">Read Now!</strong>
-                </section>
-            </article>
-
+            <div class = "cloud">
+                <article class = "galardon">
+                    <div class = "galardon__img"><img src="assets/index/img1.png" alt="Img docker"></div>
+                    <section class = "galardon__section">
+                        <span class = "galardon__titlewhats" >WHAT'S NEW</span>
+                        <h2 class = "galardon__title">Key Trends to Watch in 2022</h2>
+                        <p class = "galardon__desc">What are the six major trends impacting development teams and ultimately the way organizations operate and consume applications today? Read this report to learn how development teams can minimize disruption by modernizing the way they build, share, and run their applications with Docker.</p>
+                        <strong class = "galardon__titleread">Read Now!</strong>
+                    </section>
+                </article>
+            </div>
             <article class="container">
                 <h2>Accelerate how you build, share, and run modern applications.</h2>
-                <section>
-                    <h3>13 million+</h3>
-                    <p> developers</p>
-                    <h3>7 million+</h3>
-                    <p> applications</p>
-                    <h3>13 billion+</h3>
-                    <p> monthly image downloads</p>
+                <section class="container__box">
+                    <div class="container__box__sect">
+                        <h3>13 million+</h3>
+                        <p> developers</p>
+                    </div>
+                    <div class="container__box__sect">
+                        <h3>7 million+</h3>
+                        <p> applications</p>
+                    </div>
+                    <div class="container__box__sect">
+                        <h3>13 billion+</h3>
+                        <p> monthly image downloads</p>
+                    </div>
                 </section>
                 <button>Get Started</button>
             </article>
 
             <article class="displaycar">
-                <section class="displaycar__text">
-                    <h2>Docker makes development efficient and predictable</h2>
-                    <p> Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker’s comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. </p>
-                </section>
+                <div class="displaycar__box">
+                    <section class="displaycar__text">
+                        <h2>Docker makes development efficient and predictable</h2>
+                        <p> Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker’s comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle. </p>
+                    </section>
 
-                <section class="displaycar__friendly">
-                    <section class="displaycar__friendly__text">
-                        <h2>build</h2>
-                        <ul>
-                            <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
-                            <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
-                            <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
-                        </ul>
+                    <section class="displaycar__friendly">
+                        <section class="displaycar__friendly__text">
+                            <h2>build</h2>
+                            <ul>
+                                <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
+                                <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
+                                <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
+                            </ul>
+                        </section>
+                        <section class="displaycar__friendly__img">
+                            <img src="assets/index/i1.png" alt="img docker">
+                        </section>
                     </section>
-                    <section class="displaycar__friendly__img">
-                        <img src="assets/index/i1.png" alt="img docker">
-                    </section>
-                </section>
 
-                <section class="displaycar__friendly">
-                    <section class="displaycar__friendly__img">
-                        <img src="assets/index/i2.png" alt="img docker">
+                    <section class="displaycar__friendly">
+                        <section class="displaycar__friendly__img">
+                            <img src="assets/index/i2.png" alt="img docker">
+                        </section>
+                        <section class="displaycar__friendly__text">
+                            <h2>build</h2>
+                            <ul>
+                                <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
+                                <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
+                                <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
+                            </ul>
+                        </section>
                     </section>
-                    <section class="displaycar__friendly__text">
-                        <h2>build</h2>
-                        <ul>
-                            <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
-                            <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
-                            <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
-                        </ul>
-                    </section>
-                </section>
 
-                <section class="displaycar__friendly">
-                    <section class="displaycar__friendly__text">
-                        <h2>build</h2>
-                        <ul>
-                            <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
-                            <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
-                            <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
-                        </ul>
+                    <section class="displaycar__friendly">
+                        <section class="displaycar__friendly__text">
+                            <h2>build</h2>
+                            <ul>
+                                <li>Get a head start on your coding by leveraging Docker images to efficiently develop your own unique applications on Windows and Mac.  Create your multi-container application using Docker Compose. </li>
+                                <li>Integrate with your favorite tools throughout your development pipeline - Docker works with all development tools you use including VS Code, CircleCI and GitHub.</li>
+                                <li>Package applications as portable container images to run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE and more.</li>
+                            </ul>
+                        </section>
+                        <section class="displaycar__friendly__img">
+                            <img src="assets/index/i3.png" alt="img docker">
+                        </section>
                     </section>
-                    <section class="displaycar__friendly__img">
-                        <img src="assets/index/i3.png" alt="img docker">
-                    </section>
-                </section>
+                </div>
             </article>
 
             <article class="displaycar--blue">
@@ -120,12 +135,14 @@
 
          
             <article class = "textcontainer">
-                <section class = "textcontainer__section">
-                    <h2 class = "textcontainer__title"> A Community like No Other</h2>
-                    <p class = "textcontainer__desc">Community is at the heart of what Docker does. From our Docker Captains sharing their insight and expertise, to hundreds of MeetUps around the world, to our Slack and Discourse forums for peer-to-peer support, there’s someone else out there who has been there, done that, and is eager to help.</p>
-                    <button class = "textcontainer__titleread">Join In</button>
-                </section>
-                <section class = "textcontainer__img"><img src="assets/index/i4.png" alt="Img docker"></section>
+                <div class = "textcontainer__box">
+                    <section class = "textcontainer__section">
+                        <h2 class = "textcontainer__title"> A Community like No Other</h2>
+                        <p class = "textcontainer__desc">Community is at the heart of what Docker does. From our Docker Captains sharing their insight and expertise, to hundreds of MeetUps around the world, to our Slack and Discourse forums for peer-to-peer support, there’s someone else out there who has been there, done that, and is eager to help.</p>
+                        <button class = "textcontainer__titleread">Join In</button>
+                    </section>
+                    <section class = "textcontainer__img"><img src="assets/index/i4.png" alt="Img docker"></section>
+                </div>
             </article>
             
             <article class = "dashboard">
@@ -151,13 +168,14 @@
                 <section class = "textcontainer__img"><img src="assets/index/s1.png" alt="Img docker"></section>
                 <section class = "textcontainer__section">
                     <h2 class = "textcontainer__title"> Choose a subscription that is right for you</h2>
-                    <p class = "textcontainer__desc">Choose a subscription that is right for you</p>
-                    <button class = "textcontainer__titleread">Join In</button>
+                    <p class = "textcontainer__desc">Benefit from more collaboration, increased security, without limits... all enabled with a Docker subscription. Check out our pricing.</p>
                 </section>
             </article>
 
             <article class = "dashboard">
-                <h2>Use your favorite tools and images</h2>
+                <div>
+                    <h2>See who uses Docker</h2>
+                </div>
                 <section class="dashboard__block">
                     <img src="assets/index/b1.png" alt="Img docker">
                     <img src="assets/index/b2.png" alt="Img docker">
@@ -173,8 +191,10 @@
                     <img src="assets/index/b12.png" alt="Img docker">
                     <img src="assets/index/b13.png" alt="Img docker">
                 </section>
-                <h2>Use your favorite tools and images</h2>
-                <p> Trust that your development pipeline workflow will work in any environment – locally and in the cloud. </p>
+                <div>
+                    <h2>Go from code to cloud securely with partners that you trust</h2>
+                    <p> Trust that your development pipeline workflow will work in any environment – locally and in the cloud. </p>
+                </div>
                 <section class="dashboard__block">
                     <div class="dashboard__block__content">
                         <section class="dashboard__block__content__card"> 
@@ -226,10 +246,53 @@
                 </section>
             </article>
 
-            <article class="displaycar--blue">
+            <article class="displaycar--celeste">
                 <h2>Accelerate your application development today.</h2>
             </article>
         </main>
+        
+        <footer class = "footerdash">
+            <div class="footerdash__col">
+                <section  class="footerdash__col__item">
+                    <img src="assets/index/docker.png" alt="Img docker">
+                </section>
+                <section  class="footerdash__col__item">
+                    <strong> Products</strong>
+                    <p>Docker Personal</p>
+                    <p>Docker Pro</p>
+                    <p>Docker Team</p>
+                    <p>Docker Business</p>  
+                </section>
+                <section  class="footerdash__col__item">
+                    <strong> Developers</strong>
+                </section>
+                <section  class="footerdash__col__item">
+                    <strong> Pricing</strong>
+                </section>
+                <section  class="footerdash__col__item">
+                    <strong> Blog</strong>
+                </section>
+                <section  class="footerdash__col__item">
+                    <strong> About us</strong>
+                </section>
+
+            </div>
+
+            <div class="footerdash__row">
+                <section class="footerdash__row__item">
+                    <strong> Terms of Service</strong>
+                    <strong> Privacy </strong>
+                    <strong> Legal</strong>
+                </section>
+                <section class="footerdash__row__item">
+                    <strong> F </strong>
+                    <strong> T </strong>
+                    <strong> Y </strong>
+                    <strong> L </strong>
+                    <strong> R </strong>
+                </section>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

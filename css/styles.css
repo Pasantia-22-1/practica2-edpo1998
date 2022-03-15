@@ -1,37 +1,81 @@
-/* ----- Global Resources */
-html, body {
-    background-color: rgb(10, 44, 71);
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+:root{
+    --gray: silver;
+    --blue: rgb(10, 44, 71);
+    --white: white;
+    --celeste: #007bff;
 }
 
+*,*::before,*::after{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Poppins,sans-serif;
+  }
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+  button{
+      font-family: Poppins,sans-serif;
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: var(--celeste);
+      border-radius: 5px;
+  }
+.boxcenter {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+a{
+    font-size: 1rem;
+    padding: 5px;
+}
 
 /* -----  Nav */
 
 nav{
+    display: flex;
+    flex-direction: row;
     height: 50%;
     margin-bottom: 1rem;
     padding: 0.5rem;
+   
 }
+
+
+
 
 nav ul {
     display: flex;
     list-style: none;
+    width: 100%;
+
 }
 
 nav li {
     font-size: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    
+}
+
+nav ul div{
+    position: absolute;
+    display: inline;
+    right: 2rem;
 }
 
 nav a {
     color: #fff;
-    display: block;
-    text-decoration: none;   
+    display: inline;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;   
 }
 
    
@@ -47,51 +91,106 @@ ul li ul:hover {
     visibility: visible;
 }
 
+
+
 /**/
 .desdocker{
-    background-color: white;
+    color: white;
     display: inline-block;
+    width: 100%;
+    height: 400px;
     margin-left: 30% ;
     margin-right: 40%;
     margin-top: 5%;
 }
 
+.cloud{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 400px;
+    position: absolute;
+    background-color: transparent;
+
+}
 .galardon{
-    margin-left: 25% ;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-right: 40%;
     background-color: white;
+    border-radius: 30px;
     display: grid;
+    padding: 10px;
     grid-template-columns: 50% 50%;
-    width: 40%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
 }
 
 .galardon__section{
     display: flex;
     flex-direction: column;
 }
+
+
+
 .displaycar{
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.displaycar--celeste{
+    background-color: var(--celeste);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.displaycar__box{
+    text-align: center;
+}
+
+.displaycar__text{
+    display: inline-block;
+    width: 40%;
 }
 
 .displaycar--blue{
     color: white;
-    background-color: rgb(10, 44, 71);
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.container{
+
+    align-items: center;
+    background-color: rgba(175, 169, 169, 0.911);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    padding-top: 5rem ;
+}
+
+.container__box{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2%;
+
+}
+
 
 .displaycar--gray{
     color: white;
-    background-color: rgb(66, 66, 66);
+    background-color: var(--gray);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,11 +212,17 @@ ul li ul:hover {
 .textcontainer{
     display: flex;
     flex-direction: row;
-    background-color: white;
     align-items: center;
     justify-content: center;
+    background-color: white;
+}
 
-
+.textcontainer__box{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .textcontainer__section{
@@ -126,11 +231,12 @@ ul li ul:hover {
 }
 
 .dashboard{
-    background-color: gray;
+    background-color:gainsboro;
     text-align: center;
 }
 
 .dashboard__block{
+
     display: inline-block;
     margin-left: 30%;
     margin-right: 30%;
@@ -151,4 +257,51 @@ ul li ul:hover {
     align-items: center;
     justify-content: center;
     background-color: white;
+    border-radius: 15px;
 }
+
+/* ---- Footer */
+.footerdash{
+    background-color: var(--blue);
+    bottom: 0;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 5rem;
+}
+
+.footerdash__col {
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    gap: 3rem;
+    align-items: left;
+    justify-content: center;
+}
+
+
+.footerdash__col__item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100px;
+    height: 200px;
+
+}
+
+.footerdash__row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4rem;
+}
+/*
+
+footer > ul > li > a > img{
+    border-radius: 50%;
+    
+}*/
